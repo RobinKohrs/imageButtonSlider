@@ -66,15 +66,18 @@
         #image-container {
             margin-top: 10px;
             border: 1px solid #ccc;
-            padding: 10px;
             background-color: transparent;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 8px;
         }
 
         #displayed-image {
-            max-width: 100%;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             display: block;
-            border-radius: 8px;
+            transform: scale(1.2);
         }
     </style>
 </head>
@@ -82,7 +85,7 @@
     <div class="dj-container">
         <div class="button-bar-wrapper">
             <div id="button-bar">
-                <button id="neolithikum" class="dj-image-button dj-active">Neolithikum</button>
+                <button id="neolithikum" class="dj-image-button dj-active">Jungsteinzeit</button>
                 <button id="roemische" class="dj-image-button">Römische Kaiserzeit</button>
                 <button id="moderner" class="dj-image-button">Moderner Küstenverlauf</button>
             </div>
